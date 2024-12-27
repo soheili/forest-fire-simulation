@@ -1,0 +1,127 @@
+/* Conteneur principal */
+#simulationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Grille */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* 10 colonnes de 30px */
+    grid-template-rows: repeat(10, 30px);    /* 10 lignes de 30px */
+    gap: 2px;
+    margin-bottom: 20px; /* Espace entre la grille et les boutons */
+    border: 2px solid #ccc;
+}
+
+/* Cellules de la grille */
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+/* Conteneur principal de la simulation */
+#simulationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+/* Grille */
+#grid {
+    display: grid;
+    gap: 2px; /* Espacement entre les cellules */
+    background-color: #ddd; /* Couleur de fond */
+    padding: 10px;
+    border: 2px solid #333; /* Bordure autour de la grille */
+    border-radius: 8px;
+}
+
+/* Cellules de la grille */
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc; /* Bordure des cellules */
+    box-sizing: border-box; /* Inclure la bordure dans la taille */
+}
+
+.cell.tree {
+    background-color: green; /* Arbres */
+}
+
+.cell.fire {
+    background-color: red; /* Feu */
+}
+
+.cell.burned {
+    background-color: gray; /* Cellules brûlées */
+}
+
+/* Contrôles */
+#controls {
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+    margin-top: 15px; /* Espacement au-dessus des boutons */
+    justify-content: center;
+}
+
+/* Boutons */
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05); /* Agrandissement léger au survol */
+}
+
+button:active {
+    background-color: #d0d0d0;
+    transform: scale(0.95); /* Réduction légère lors du clic */
+}
+
+/* Compteur d'étapes */
+#stepCounter {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Pour des écrans plus grands */
+@media (min-width: 768px) {
+    #grid {
+        gap: 3px;
+    }
+
+    .cell {
+        width: 25px;
+        height: 25px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    #stepCounter {
+        font-size: 18px;
+    }
+}
