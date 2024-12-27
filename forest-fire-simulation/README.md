@@ -107,6 +107,9 @@ o Highlight scalability and maintainability considerations.
 * Provide sample runs with various configurations.
 * Include visualizations of the grid at different steps of the simulation.
 
+* ![forest-simulation](https://github.com/user-attachments/assets/4549f009-9be0-4525-b14d-5ceb90a75ba3)
+
+
 
 
 
