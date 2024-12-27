@@ -1,4 +1,6 @@
 Forest Fire Simulation Application
+
+
 The goal is to implement a simulation of forest fire propagation. 
 Simulation Description
 
